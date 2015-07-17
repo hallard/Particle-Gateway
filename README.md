@@ -23,23 +23,24 @@ Everything is documented on this dedicated [post][1]
 
 ### Boards  
 <img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-top.png" alt="Top" width="30%" height="30%">&nbsp;
-<img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-bottom.png" alt="Bottom" width="30%" height="30%">
-<img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-assembled.jpg" alt="Assembled TOP" width="30%" height="30%">
+<img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-bottom.png" alt="Bottom" width="30%" height="30%">&nbsp; 
+
+You can order the PCB of this board at [OSHPARK][5]
+
+### Assembled board
+
+<img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-assembled.jpg" alt="Assembled TOP" width="30%" height="30%">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-assembled-bot.jpg" alt="Assembled Bottom" width="30%" height="30%">
-
-
-##Libraries
-I worked on a French project that use OLED Display and RFM69 module using Lowpowerlab RFM69 library, so you can find working code you need to grab the code you need, it's really a project with lots of library into.
-- you can find this project [here][3]
-
 
 ##License
 
-Yon can do whatever you like with this design.
+You can do whatever you like with this design.
 
 ##Misc
 See news and other projects on my [blog][2] 
  
-[1]: http://hallard.me/particle-gateway/
-[2]: http://hallard.me
+[1]: https://hallard.me/particle-gateway/
+[2]: https://hallard.me
 [3]: https://github.com/thibdct/programmateur-fil-pilote-wifi/tree/master/Logiciel/remora
+[4]: http://lowpowerlab.com/blog/2013/06/20/rfm69-library/
+[5]: https://oshpark.com/projects/wUBgoDUV
