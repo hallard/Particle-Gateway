@@ -29,9 +29,6 @@ For SPARK connector I use IC socket that I cut on needed size, for other connect
 ### Boards  
 <img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-top.png" alt="Top" width="40%" height="40%">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-bottom.png" alt="Bottom" width="40%" height="40%">&nbsp; 
-<img src="https://hallard.me/blog/wp-content/uploads/2015/07/particle-gateway-with-spark-core-and-stacked-oled.jpg" alt="OLED" width="40%" height="40%">&nbsp; 
-
-
 
 You can order the PCB of this board at [OSHPARK][5]
 
@@ -39,6 +36,8 @@ You can order the PCB of this board at [OSHPARK][5]
 
 <img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-assembled.jpg" alt="Assembled TOP" width="50%" height="50%">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-assembled-bot.jpg" alt="Assembled Bottom" width="50%" height="50%">
+<img src="https://hallard.me/blog/wp-content/uploads/2015/07/particle-gateway-with-spark-core-and-stacked-oled.jpg" alt="OLED" width="50%" height="50%">&nbsp; 
+
 
 ##License
 
