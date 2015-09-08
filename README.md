@@ -22,12 +22,9 @@ Everything is documented on this dedicated [post][1]
 ![schematic](https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-sch.png)  
 
 ### Bill Of Material
-Reference from Seeedstudio [Open Part Libray](http://www.seeedstudio.com/depot/OPLopen-parts-library-catalog-c-136_138/?ref=side) SKU but can be ordered on any provider, Digikey, Mouser.    
+Reference from Seeedstudio [Open Part Libray](http://www.seeedstudio.com/depot/OPLopen-parts-library-catalog-c-136_138/?ref=side) SKU but can be ordered on any provider, Digikey, Mouser. Linl to the [BOM](https://github.com/hallard/Particle-Gateway/blob/master/Particle-Gateway-BOM.xlsx?raw=true) file.    
 
-Here is the [BOM](https://github.com/hallard/Particle-Gateway/blob/master/Particle-Gateway-BOM.xlsx?raw=true) file.    
-
-For SPARK connector I use IC socket that I cut on needed size, for other connectors, I usually buy 40 pins headers (male and female) on ebay that I cut at the needed size.  
-example [here](http://stores.ebay.com/jkpartsstore/Connectors-Sockets-/_i.html?_fsub=1665035011)
+For SPARK connector I use IC socket that I cut on needed size, for other connectors, I usually buy 40 pins headers (male and female) on ebay that I cut at the needed size. [Example](http://stores.ebay.com/jkpartsstore/Connectors-Sockets-/_i.html?_fsub=1665035011)
 
 ### Boards  
 <img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-top.png" alt="Top" width="40%" height="40%">&nbsp;
