@@ -22,9 +22,9 @@ Everything is documented on this dedicated [post][1]
 ![schematic](https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-sch.png)  
 
 ### Bill Of Material
-Reference from Seeedstudio [Open Part Libray](http://www.seeedstudio.com/depot/OPLopen-parts-library-catalog-c-136_138/?ref=side) SKU but can be ordered on any provider, Digikey, Mouser. Linl to the [BOM](https://github.com/hallard/Particle-Gateway/blob/master/Particle-Gateway-BOM.xlsx?raw=true) file.    
+Reference from Seeedstudio [Open Part Libray](8) SKU but can be ordered on any provider, Digikey, Mouser. Link to the [BOM](6) file.    
 
-For SPARK connector I use IC socket that I cut on needed size, for other connectors, I usually buy 40 pins headers (male and female) on ebay that I cut at the needed size. [Example](http://stores.ebay.com/jkpartsstore/Connectors-Sockets-/_i.html?_fsub=1665035011)
+For SPARK connector I use IC socket that I cut on needed size, for other connectors, I usually buy 40 pins headers (male and female) on ebay that I cut at the needed size. [Example](7)
 
 ### Boards  
 <img src="https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-top.png" alt="Top" width="40%" height="40%">&nbsp;
@@ -49,3 +49,6 @@ See news and other projects on my [blog][2]
 [3]: https://github.com/thibdct/programmateur-fil-pilote-wifi/tree/master/Logiciel/remora
 [4]: http://lowpowerlab.com/blog/2013/06/20/rfm69-library/
 [5]: https://oshpark.com/projects/wUBgoDUV
+[6]: https://github.com/hallard/Particle-Gateway/blob/master/Particle-Gateway-BOM.xlsx?raw=true
+[7]: http://stores.ebay.com/jkpartsstore/Connectors-Sockets-/_i.html?_fsub=1665035011
+[8]: http://www.seeedstudio.com/depot/OPLopen-parts-library-catalog-c-136_138/?ref=side
