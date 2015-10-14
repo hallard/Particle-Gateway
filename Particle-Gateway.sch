@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6994,6 +6994,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="1.27" y="1.27" size="0.4064" layer="25">&gt;Name</text>
 <text x="1.27" y="-3.81" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="SMA-EDGE">
+<description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
+This is a footprint for an edge mount RF antenna. Works pretty well with SMA type connectors but may also work with other edge mount RF connectors. Keep in mind, these edge mount connectors assume you are using a 0.062" PCB thickness.</description>
+<smd name="GND@0" x="0" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="SIG" x="2.54" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@1" x="5.08" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@2" x="0" y="0" dx="1.524" dy="4.064" layer="16"/>
+<smd name="GND@3" x="5.08" y="0" dx="1.524" dy="4.064" layer="16"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M06">
@@ -7015,6 +7024,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="4" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="5" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="6" x="5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="SMA_EDGE">
+<wire x1="0" y1="-2.54" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.1359" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="GND@0" x="-2.54" y="-5.08" visible="off" length="short"/>
+<pin name="SIGNAL" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="GND@1" x="-2.54" y="-7.62" visible="off" length="short"/>
+<pin name="GND@2" x="-2.54" y="-10.16" visible="off" length="short"/>
+<pin name="GND@3" x="-2.54" y="-12.7" visible="off" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7289,6 +7308,27 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMA_EDGE" prefix="J$">
+<description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;
+End launch SMA connector. The paste layer has been removed so that the connector can be hand soldered onto the board after reflow.</description>
+<gates>
+<gate name="1" symbol="SMA_EDGE" x="-2.54" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="SMA-EDGE">
+<connects>
+<connect gate="1" pin="GND@0" pad="GND@0"/>
+<connect gate="1" pin="GND@1" pad="GND@1"/>
+<connect gate="1" pin="GND@2" pad="GND@2"/>
+<connect gate="1" pin="GND@3" pad="GND@3"/>
+<connect gate="1" pin="SIGNAL" pad="SIG"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7583,8 +7623,8 @@ http://dangerousprototypes.com</description>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="L"/>
 <part name="J2" library="seeed-opl-Connector" deviceset="GROVE-4P-2.0" device="-3470140P1" value="GROVE-I2C"/>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
-<attribute name="CNAME" value="Spark RF Gateway + Display"/>
-<attribute name="CREVISION" value="1.0"/>
+<attribute name="CNAME" value="Particle RF Gateway + Display"/>
+<attribute name="CREVISION" value="1.0a"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
 <part name="U1" library="Seeed-IC" deviceset="CJ1117-3.3" device="-1310190P1" value="AMS1117-3.3"/>
@@ -7604,6 +7644,7 @@ http://dangerousprototypes.com</description>
 <part name="J5" library="dp_devices" deviceset="CON_HEADER_1X08" device="-PTH"/>
 <part name="3V3CORE" library="Seeed-Discrete" deviceset="PAD-JUMPER-2P" device=""/>
 <part name="5VFTDI" library="Seeed-Discrete" deviceset="PAD-JUMPER-2P" device=""/>
+<part name="J$1" library="SparkFun-Connectors" deviceset="SMA_EDGE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7640,7 +7681,7 @@ http://dangerousprototypes.com</description>
 <instance part="U$3" gate="G$1" x="106.68" y="27.94"/>
 <instance part="P1" gate="G$1" x="147.32" y="30.48"/>
 <instance part="U-FL" gate="G$1" x="142.24" y="30.48"/>
-<instance part="GND9" gate="1" x="139.7" y="17.78"/>
+<instance part="GND9" gate="1" x="139.7" y="12.7"/>
 <instance part="GND1" gate="1" x="106.68" y="10.16"/>
 <instance part="GND13" gate="1" x="30.48" y="15.24"/>
 <instance part="P+1" gate="1" x="30.48" y="45.72" smashed="yes">
@@ -7717,6 +7758,7 @@ http://dangerousprototypes.com</description>
 <instance part="5VFTDI" gate="G$1" x="156.21" y="116.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="160.274" y="115.062" size="1.27" layer="95" ratio="10" rot="R180"/>
 </instance>
+<instance part="J$1" gate="1" x="142.24" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -7819,6 +7861,14 @@ http://dangerousprototypes.com</description>
 <junction x="139.7" y="22.86"/>
 <wire x1="139.7" y1="22.86" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
 <junction x="139.7" y="25.4"/>
+<pinref part="J$1" gate="1" pin="GND@0"/>
+<pinref part="J$1" gate="1" pin="GND@1"/>
+<pinref part="J$1" gate="1" pin="GND@2"/>
+<wire x1="139.7" y1="20.32" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
+<junction x="139.7" y="20.32"/>
+<pinref part="J$1" gate="1" pin="GND@3"/>
+<wire x1="139.7" y1="17.78" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
+<junction x="139.7" y="17.78"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
@@ -8306,6 +8356,7 @@ http://dangerousprototypes.com</description>
 <label x="132.08" y="30.48" size="1.778" layer="95"/>
 <pinref part="U-FL" gate="G$1" pin="SIGNAL"/>
 <junction x="147.32" y="30.48"/>
+<pinref part="J$1" gate="1" pin="SIGNAL"/>
 </segment>
 </net>
 <net name="A6/DAC" class="0">
@@ -8408,16 +8459,21 @@ http://dangerousprototypes.com</description>
 </sheets>
 <errors>
 <approved hash="102,1,105.41,166.37,3V3-EXT,3V3-REG,,,,"/>
-<approved hash="102,1,73.66,83.82,3V3-EXT,3V3-REG,,,,"/>
+<approved hash="102,1,83.82,129.54,3V3-EXT,3V3-REG,,,,"/>
 <approved hash="102,1,114.3,86.36,3V3-EXT,3V3-REG,,,,"/>
 <approved hash="102,1,106.68,45.72,3V3-EXT,3V3-REG,,,,"/>
-<approved hash="102,1,13.97,83.82,3V3-EXT,3V3-REG,,,,"/>
+<approved hash="102,1,24.13,129.54,3V3-EXT,3V3-REG,,,,"/>
 <approved hash="104,1,186.69,140.97,SPARKCORE,RAW,+5V,,,"/>
 <approved hash="104,1,222.25,140.97,SPARKCORE,VCC,+3V3,,,"/>
 <approved hash="104,1,114.3,81.28,U$2,VCC,3V3-REG,,,"/>
 <approved hash="202,1,101.6,76.2,U$2,NRES,,,,"/>
 <approved hash="104,1,106.68,43.18,U$3,VCC,3V3-REG,,,"/>
+<approved hash="112,1,140.97,25.4,,,,,,"/>
+<approved hash="112,1,144.78,30.48,,,,,,"/>
+<approved hash="112,1,140.97,22.86,,,,,,"/>
 <approved hash="113,1,160.02,149.644,J1,,,,,"/>
+<approved hash="113,1,122.886,159.597,3V3CORE,,,,,"/>
+<approved hash="113,1,156.921,118.533,5VFTDI,,,,,"/>
 </errors>
 </schematic>
 </drawing>
