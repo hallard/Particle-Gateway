@@ -52,7 +52,7 @@ See news and other projects on my [blog][2]
 [2]: https://hallard.me
 [3]: https://github.com/thibdct/programmateur-fil-pilote-wifi/tree/master/Logiciel/remora
 [4]: http://lowpowerlab.com/blog/2013/06/20/rfm69-library/
-[5]: https://oshpark.com/projects/wUBgoDUV
+[5]: https://oshpark.com/shared_projects/S3Dmdwhs
 [6]: https://github.com/hallard/Particle-Gateway/blob/master/Particle-Gateway-BOM.xlsx?raw=true
 [7]: http://stores.ebay.com/jkpartsstore/Connectors-Sockets-/_i.html?_fsub=1665035011
 [8]: http://www.seeedstudio.com/depot/OPLopen-parts-library-catalog-c-136_138/?ref=side
