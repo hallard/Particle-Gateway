@@ -1,6 +1,8 @@
 Particle (formerly Spark) Gateway
 =================================
 
+Edit October 2015 : New Revision 1.0a with better SMA connector for RF module
+
 The gateway can host several funny things like
 
 - Socket to plug a Spark Core or Particle Photon
@@ -16,7 +18,7 @@ The gateway can host several funny things like
 Detailed Description
 ====================
 
-Everything is documented on this dedicated [post][1]
+Everything is documented on this dedicated [post][1] 
 
 ### Schematic  
 ![schematic](https://raw.githubusercontent.com/hallard/Particle-Gateway/master/Particle-Gateway-sch.png)  
